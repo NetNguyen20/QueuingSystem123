@@ -1,19 +1,19 @@
 const initialState = {
-    list: ['Listening to music'],
+    list: ['Account User'],
     selectedId:null
 }
 
-interface AddHobbyAction {
-    type: "ADD_HOBBY",
+interface AddUserAction {
+    type: "ADD_USER",
     payload:string
 }
 
 
-type Action = AddHobbyAction 
+type Action = AddUserAction 
 
 const userReducer = (state = initialState, action: Action) => {
     switch (action.type){
-        case "ADD_HOBBY":{
+        case "ADD_USER":{
             const newList = [...state.list];
             newList.push(action.payload);
 
