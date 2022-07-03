@@ -1,7 +1,8 @@
 import React from 'react';
 import './App.css';
 import Nvabar from "./component/nvabar"
-import Login from "./component/auth"
+import Login from "./component/login"
+
 import { Routes, BrowserRouter as Router, Route, BrowserRouter } from 'react-router-dom';
 
 function App() {
@@ -11,7 +12,7 @@ function App() {
     <div className="App" >
                       
       <BrowserRouter>
-        <Routes>       
+        <Routes>  
           <Route path='/Page-login' element ={<Login/>}/>
           <Route path='/Page-home' element ={<Nvabar/>}/>
         </Routes>
