@@ -5,6 +5,14 @@
   font-style: normal;
 }
 
+.form-group span{
+  position:absolute;
+  top: 435px;
+  left: 126px;
+  font-size: 12px;
+  font-weight: 600;
+  color: red;
+}
 
 .list-menu{
   position: absolute;
@@ -166,7 +174,7 @@ top: 364px;
 width: 202px;
 height: 11px;
 left: 95px;
-top: 435px;
+top: 455px;
 
 font-family: 'Nunito';
 font-style: normal;
@@ -485,3 +493,193 @@ border-radius: 6px;
   right: 620px;
   font-weight: 600;
 }
+
+.danhsachthietbi{
+  display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+
+position: absolute;
+width: 1112px;
+height: 490px;
+left: 224px;
+top: 244px;
+
+filter: drop-shadow(2px 2px 8px rgba(232, 239, 244, 0.8));
+border-radius: 12px;
+}
+
+.mathietbi{
+  display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px 8px 0px 16px;
+gap: 10px;
+
+width: 103px;
+height: 49px;
+
+background: #FF9138;
+
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+}
+
+.tenthietbi{
+  display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px 8px;
+gap: 10px;
+
+width: 99px;
+height: 49px;
+
+background: #FF9138;
+
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+}
+
+.dichiip{
+  display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px 8px;
+gap: 10px;
+
+width: 138px;
+height: 49px;
+
+background: #FF9138;
+
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+}
+
+.trangthai{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px 8px;
+  gap: 10px;
+  
+  width: 171px;
+  height: 49px;
+    
+  background: #FF9138;
+  
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.ketnoi{
+
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px 8px;
+gap: 10px;
+
+width: 145px;
+height: 49px;
+
+background: #FF9138;
+
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+}
+
+.dichvu{
+  display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px 17px;
+gap: 10px;
+
+width: 268px;
+height: 49px;
+
+background: #FF9138;
+
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+}
+
+.chitiet{
+  display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px 17px;
+gap: 10px;
+
+width: 82px;
+height: 49px;
+
+background: #FF9138;
+
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+}
+
+.capnhat{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px 17px;
+  gap: 10px;
+  
+  width: 106px;
+  height: 49px;
+    
+  background: #FF9138;
+    
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.thanhchan{
+  width: 1px;
+height: 490px;
+
+background: #FFE3CD;
+
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+
+.danhsachthietbi h5{
+
+font-family: 'Nunito';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 24px;
+
+color: #FFFFFF;
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+

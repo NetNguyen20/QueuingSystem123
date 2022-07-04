@@ -31,18 +31,18 @@
                 </div>
             </div>
             <div className="list-menu">
-                <div className='web-icon'>
+                <NavLink className='web-icon' to="/Page-home">
                     <img src={logo}/>
-                </div>
+                </NavLink>
                 <ul className="navbar-nav">
                     <li className="nav-item active">
-                        <NavLink className="list-link Dashboard" to="/dashboard">
+                        <NavLink className="list-link Dashboard" to="/Page-dashboard">
                             <img className="i-element" src={Dashboard}/>
                             Dashboard
                         </NavLink>
                     </li>
                     <li className="nav-item">
-                        <NavLink className="list-link Thiet-bi" to="/thietbi">
+                        <NavLink className="list-link Thiet-bi" to="/Page-thietbi">
                             <img className="i-element" src={Thietbi}/>
                             Thiết bị
                         </NavLink>
@@ -76,7 +76,7 @@
                     </li>
                     <li className="nav-item">
                         {user && 
-                            <NavLink onClick={signOut} className="list-link Dang-xuat" to="">
+                            <NavLink onClick={signOut} className="list-link Dang-xuat" to="/Page-login">
                                 <img className="i-element" src={Dangxuat}/>
                                 Đăng xuất
                             </NavLink>
@@ -84,42 +84,8 @@
                         
                     </li>
                 </ul>
-
-                <div className="informationUser">
-                    <ul className="detail">
-                        <img className="anhdaidien" src={logo}/>
-                        <div className="hovaten">
-                            <p>Họ và tên</p>
-                        </div>
-                        <div className="tennguoidung">
-                            <p>Tên người dùng</p><br />
-                            <form action="">Tên</form>
-                        </div>
-                        <li className="tennguoidung1">
-                            <p>Tên đăng nhập</p>
-                            <form action="">Tên</form>
-                        </li>
-                        <li className="tennguoidung2">
-                            <p>Số điện thoại</p>
-                            <form action="">Tên</form>
-                        </li>
-                        <li className="tennguoidung3">
-                            <p>Mật khẩu</p>
-                            <form action="">Tên</form>
-                        </li>
-                        <li className="tennguoidung4">
-                            <p>Email</p>
-                            <form action="">Tên</form>
-                        </li>
-                        <li className="tennguoidung5">
-                            <p>Vai trò</p>
-                            <form action="">Tên</form>
-                        </li>
-                    </ul>
-                </div>
                 
             </div>
-
                 
         </div>);
     } 

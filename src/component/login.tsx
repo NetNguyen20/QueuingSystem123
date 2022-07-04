@@ -3,7 +3,7 @@ import logo from "../image/logo.png"
 import { auth } from "../firebase";
 import { AuthContext } from "../context/AuthContext";
 import { Button, Col, Container, Form, Navbar } from "react-bootstrap";
-import React, { useContext, useRef } from "react";
+import React, { useContext, useRef, useState } from "react";
 import Home from "../component/nvabar"
 import {NavLink} from "react-router-dom"
 
@@ -12,17 +12,18 @@ import {NavLink} from "react-router-dom"
 
     const emailRef = useRef<HTMLInputElement>(null);
     const passwordRef = useRef<HTMLInputElement>(null);
+    const [error, setError] = useState(false);
 
-    const createAccount = async () => {
-      try {
-          await auth.createUserWithEmailAndPassword(
-          emailRef.current!.value,
-          passwordRef.current!.value
-        );
-      } catch (error) {
-        console.error(error);
-      }
-    };
+    // const createAccount = async () => {
+    //   try {
+    //       await auth.createUserWithEmailAndPassword(
+    //       emailRef.current!.value,
+    //       passwordRef.current!.value
+    //     );
+    //   } catch (error) {
+    //       setError(true);
+    //   }
+    // };
 
     const signIn = async () => {
       try {
@@ -31,7 +32,7 @@ import {NavLink} from "react-router-dom"
           passwordRef.current!.value
         );
       } catch (error) {
-        console.log('Email hoặc mật khẩu nhập không chính xác',error);
+          setError(true);
       }
     };
 
@@ -63,6 +64,8 @@ import {NavLink} from "react-router-dom"
                                     <label>Mật khẩu</label>
                                     <input type="password" className="form-control" ref={passwordRef}  placeholder="Nhập mật khẩu" />
                                 </ul>
+                                {error && <span>Sai mật khẩu hoặc tên đăng nhập</span>}
+                                
                                 <ul className="quenmatkhau">
                                     <label><a href="#">Quên mật khẩu?</a></label>
                                 </ul>
