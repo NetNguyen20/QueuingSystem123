@@ -10,6 +10,7 @@ import Thietbi from './component/ThietBi';
 import Register from './component/register';
 import Retpassword from './component/resetpassword';
 import Quanlytaikhoan from './component/Quanlytaikhoan';
+import Themnguoidung from './component/Themnguoidung';
 
 function App() {
   
@@ -26,6 +27,7 @@ function App() {
           <Route path='/Page-register' element ={<Register/>}/>
           <Route path='/Page-reset' element ={<Retpassword/>}/>
           <Route path='/Page-quanly' element ={<Quanlytaikhoan/>}/>
+          <Route path='/Page-nguoidung' element ={<Themnguoidung/>}/>
 
 
         </Routes>

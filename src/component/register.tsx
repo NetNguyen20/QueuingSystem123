@@ -2,12 +2,12 @@ import React, { useEffect, useState } from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { Link, useNavigate } from "react-router-dom";
 import { auth, db } from "../firebase";
-import {addDoc, collection} from "firebase/firestore"
-import { createUserWithEmailAndPassword} from "firebase/auth";
+import { addDoc, collection } from "firebase/firestore"
+import { createUserWithEmailAndPassword } from "firebase/auth";
 
 
 
-const Register = () =>  {
+const Register = () => {
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -15,7 +15,7 @@ const Register = () =>  {
   const [phone, setPhone] = useState<number | string>(0);
   const [user, loading, error] = useAuthState(auth);
   const navigate = useNavigate();
-  const createUser = async (username:string, name:string, email:string, password:string, phone:number | string) => {
+  const createUser = async (username: string, name: string, email: string, password: string, phone: number | string) => {
     try {
       const res = await createUserWithEmailAndPassword(auth, email, password);
       const user = res.user;
@@ -27,9 +27,9 @@ const Register = () =>  {
         email,
         phone,
         password
-        
+
       });
-    } catch (err:any) {
+    } catch (err: any) {
       console.error(err);
       alert(err.message);
     }
@@ -40,12 +40,12 @@ const Register = () =>  {
   };
   useEffect(() => {
     if (loading) return;
-    if (user) navigate('/Page-home', {replace: true});
+    if (user) navigate('/Page-home', { replace: true });
   }, [user, loading]);
   return (
     <div className="register">
       <div className="register__container">
-      <input
+        <input
           type="text"
           className="register__textBox"
           value={username}
@@ -83,7 +83,7 @@ const Register = () =>  {
         <button className="register__btn" onClick={register}>
           Register
         </button>
-       
+
         <div>
           Already have an account? <Link to="/Page-login">Login</Link> now.
         </div>

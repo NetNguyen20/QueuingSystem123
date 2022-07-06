@@ -1,12 +1,12 @@
   @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
 
-  *{
+  * {
     font-family: 'Nunito';
     font-style: normal;
   }
 
-  .form-group span{
-    position:absolute;
+  .form-group span {
+    position: absolute;
     top: 435px;
     left: 126px;
     font-size: 12px;
@@ -14,7 +14,7 @@
     color: red;
   }
 
-  .list-menu{
+  .list-menu {
     position: absolute;
     width: 200px;
     height: 750px;
@@ -26,17 +26,19 @@
     box-shadow: 0px 4px 6px rgba(219, 219, 219, 0.5);
     border-radius: 16px 0px 0px 16px;
   }
-  .navbar-nav{
+
+  .navbar-nav {
     left: 10px;
   }
-  .web-icon{
+
+  .web-icon {
     /* Logo alta */
 
-  position: absolute;
-  width: 80px;
-  height: 64px;
-  left: 60px;
-  top: 32px;
+    position: absolute;
+    width: 80px;
+    height: 64px;
+    left: 60px;
+    top: 32px;
   }
 
   /* .list-menu{
@@ -53,13 +55,13 @@
     top: 3%;
   } */
 
-  .list-link img{
+  .list-link img {
     position: relative;
     padding: 0px 8px 5px 0px;
-    top:5px;
+    top: 5px;
   }
 
-  img.i-element{
+  img.i-element {
     position: relative;
     top: 2px;
   }
@@ -71,15 +73,15 @@
     width: 240px;
     left: -36px;
   }
-  
-  .menu > li > a {
+
+  .menu>li>a {
     color: #7E7D88;
     display: block;
     padding: 8px 15px;
     text-align: center;
     text-decoration: none;
   }
-  
+
   .menu ul {
     background: #FFFFFF;
     height: 0;
@@ -90,14 +92,14 @@
     top: 35px;
     width: 210px;
   }
-  
+
   .menu li:hover ul {
     height: 120px;
     opacity: 1;
     background: #ddd;
     transform: translateY(0);
   }
-  
+
   .menu ul a {
     color: #000;
     display: inline-block;
@@ -110,14 +112,15 @@
     list-style: none;
     display: inline-block;
     color: #fff;
-}
+  }
+
   .menu ul li:hover {
     background: #FF7506;
   }
 
 
-  .list-link{
-    
+  .list-link {
+
     color: #7E7D88;
     display: flex;
     text-decoration: none;
@@ -129,13 +132,13 @@
     border-radius: 12px;
   }
 
-  ul{
-    align-items:flex-start;
+  ul {
+    align-items: flex-start;
     position: absolute;
     left: -15%;
     top: 15%;
     order: 1;
-    list-style:none;
+    list-style: none;
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -144,11 +147,11 @@
     height: 20%;
   }
 
-  li{
+  li {
     float: center;
   }
 
-  .i-list{
+  .i-list {
     flex: none;
     order: 1;
     flex-grow: 0;
@@ -156,7 +159,7 @@
     height: 20px;
   }
 
-  .Dang-xuat{
+  .Dang-xuat {
     position: relative;
     flex-direction: row;
     align-items: center;
@@ -169,7 +172,7 @@
 
   }
 
-  .Topic{
+  .Topic {
     position: absolute;
     width: 350px;
     height: 54px;
@@ -180,107 +183,107 @@
 
   }
 
-  .Banner{
+  .Banner {
     position: absolute;
-  width: 605px;
-  height: 614.06px;
-  left: 671px;
-  top: 112.94px;
+    width: 605px;
+    height: 614.06px;
+    left: 671px;
+    top: 112.94px;
 
   }
 
-  .web-icon-1{
+  .web-icon-1 {
     position: absolute;
-  width: 170px;
-  height: 136px;
-  left: 265px;
-  top: 58px;
+    width: 170px;
+    height: 136px;
+    left: 265px;
+    top: 58px;
   }
 
-  .form-group{
+  .form-group {
     display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 2px;
-  gap: 4px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2px;
+    gap: 4px;
   }
 
-  .tendangnhap{
+  .tendangnhap {
     position: absolute;
     left: 94px;
     top: 293px;
-    
-  }
-
-  .matkhau{
-  position: absolute;
-  left: 94px;
-  top: 364px;
 
   }
 
-  .quenmatkhau{
+  .matkhau {
     position: absolute;
-  width: 202px;
-  height: 11px;
-  left: 95px;
-  top: 455px;
-
-  font-family: 'Nunito';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 21px;
-
-  color: #E73F3F;
+    left: 94px;
+    top: 364px;
 
   }
 
-  input.form-control{
+  .quenmatkhau {
+    position: absolute;
+    width: 202px;
+    height: 11px;
+    left: 95px;
+    top: 455px;
+
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+
+    color: #E73F3F;
+
+  }
+
+  input.form-control {
     width: 350px;
   }
 
-  .nutdangnhap{
+  .nutdangnhap {
     display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 10px 24px;
-  gap: 8px;
-  color: #FFFFFF;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 24px;
+    gap: 8px;
+    color: #FFFFFF;
 
-  position: absolute;
-  width: 162px;
-  height: 40px;
-  left: 215px;
-  top: 511px;
+    position: absolute;
+    width: 162px;
+    height: 40px;
+    left: 215px;
+    top: 511px;
 
-  background: #FF9138;
+    background: #FF9138;
 
-  box-shadow: 0px 0px 6px #E7E9F2;
-  border-radius: 8px;
+    box-shadow: 0px 0px 6px #E7E9F2;
+    border-radius: 8px;
   }
 
-  .information{
+  .information {
     position: relative;
   }
 
-  .ten{
+  .ten {
     position: absolute;
     left: 1300px;
   }
 
-  .tieude{
+  .tieude {
     font-weight: bold;
-    font-size:large;
+    font-size: large;
     line-height: 80px;
     color: #FF9138;
     position: absolute;
     left: 220px;
   }
 
-  .informationUser{
+  .informationUser {
     position: relative;
     width: 1112px;
     box-shadow: 0px 2px 6px rgba(219, 219, 219, 0.5);
@@ -288,636 +291,909 @@
     background: #FF9138;
   }
 
-  .detail{
+  .detail {
     position: absolute;
     width: 792px;
-  height: 276px;
-  left: 296px;
-  top: 150px;
+    height: 276px;
+    left: 296px;
+    top: 150px;
   }
 
-  .tennguoidung{
+  .tennguoidung {
     position: relative;
     width: 350px;
-  height: 100px;
-  left: 350px;
-  top: 10px;
+    height: 100px;
+    left: 350px;
+    top: 10px;
 
   }
 
-  .tennguoidung p{
+  .tennguoidung p {
     width: 113px;
-  height: 20px;
-  flex-direction: row;
+    height: 20px;
+    flex-direction: row;
 
-  font-weight: 600;
-  font-size: 16px;
-  color: #282739;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
+    font-weight: 600;
+    font-size: 16px;
+    color: #282739;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
   }
 
-  .tennguoidung form{
+  .tennguoidung form {
     display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 12px 16px;
-  gap: 1px;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 16px;
+    gap: 1px;
 
-  position: absolute;
-  width: 300px;
-  height: 34px;
-  left: 2px;
-  top: 30px;
+    position: absolute;
+    width: 300px;
+    height: 34px;
+    left: 2px;
+    top: 30px;
 
-  background: #EAEAEC;
-  border-radius: 6px;
+    background: #EAEAEC;
+    border-radius: 6px;
   }
 
-  .tennguoidung1{
+  .tennguoidung1 {
     position: relative;
     width: 350px;
-  height: 100px;
-  left: 680px;
-  top: -57px;
+    height: 100px;
+    left: 680px;
+    top: -57px;
 
   }
 
-  .tennguoidung1 p{
+  .tennguoidung1 p {
     width: 113px;
-  height: 20px;
-  flex-direction: row;
+    height: 20px;
+    flex-direction: row;
 
-  font-weight: 600;
-  font-size: 16px;
-  color: #282739;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
+    font-weight: 600;
+    font-size: 16px;
+    color: #282739;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
   }
 
-  .tennguoidung1 form{
+  .tennguoidung1 form {
     display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 12px 16px;
-  gap: 1px;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 16px;
+    gap: 1px;
 
-  position: absolute;
-  width: 300px;
-  height: 34px;
-  left: 2px;
-  top: 30px;
+    position: absolute;
+    width: 300px;
+    height: 34px;
+    left: 2px;
+    top: 30px;
 
-  background: #EAEAEC;
-  border-radius: 6px;
+    background: #EAEAEC;
+    border-radius: 6px;
   }
 
-  .tennguoidung2{
+  .tennguoidung2 {
     position: relative;
     width: 350px;
-  height: 100px;
-  left: 350px;
-  top: -16px;
+    height: 100px;
+    left: 350px;
+    top: -16px;
 
   }
 
-  .tennguoidung2 p{
+  .tennguoidung2 p {
     width: 113px;
-  height: 20px;
-  flex-direction: row;
+    height: 20px;
+    flex-direction: row;
 
-  font-weight: 600;
-  font-size: 16px;
-  color: #282739;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
+    font-weight: 600;
+    font-size: 16px;
+    color: #282739;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
   }
 
-  .tennguoidung2 form{
+  .tennguoidung2 form {
     display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 12px 16px;
-  gap: 1px;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 16px;
+    gap: 1px;
 
-  position: absolute;
-  width: 300px;
-  height: 34px;
-  left: 2px;
-  top: 30px;
+    position: absolute;
+    width: 300px;
+    height: 34px;
+    left: 2px;
+    top: 30px;
 
-  background: #EAEAEC;
-  border-radius: 6px;
+    background: #EAEAEC;
+    border-radius: 6px;
   }
 
-  .tennguoidung3{
+  .tennguoidung3 {
     position: relative;
     width: 350px;
-  height: 100px;
-  left: 680px;
-  top: -60px;
+    height: 100px;
+    left: 680px;
+    top: -60px;
 
   }
 
-  .tennguoidung3 p{
+  .tennguoidung3 p {
     width: 113px;
-  height: 20px;
-  flex-direction: row;
+    height: 20px;
+    flex-direction: row;
 
-  font-weight: 600;
-  font-size: 16px;
-  color: #282739;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
+    font-weight: 600;
+    font-size: 16px;
+    color: #282739;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
   }
 
-  .tennguoidung3 form{
+  .tennguoidung3 form {
     display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 12px 16px;
-  gap: 1px;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 16px;
+    gap: 1px;
 
-  position: absolute;
-  width: 300px;
-  height: 34px;
-  left: 2px;
-  top: 30px;
+    position: absolute;
+    width: 300px;
+    height: 34px;
+    left: 2px;
+    top: 30px;
 
-  background: #EAEAEC;
-  border-radius: 6px;
+    background: #EAEAEC;
+    border-radius: 6px;
   }
 
-  .tennguoidung4{
+  .tennguoidung4 {
     position: relative;
     width: 350px;
-  height: 100px;
-  left: 350px;
-  top: -18px;
+    height: 100px;
+    left: 350px;
+    top: -18px;
 
   }
 
-  .tennguoidung4 p{
+  .tennguoidung4 p {
     width: 113px;
-  height: 20px;
-  flex-direction: row;
+    height: 20px;
+    flex-direction: row;
 
-  font-weight: 600;
-  font-size: 16px;
-  color: #282739;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
+    font-weight: 600;
+    font-size: 16px;
+    color: #282739;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
   }
 
-  .tennguoidung4 form{
+  .tennguoidung4 form {
     display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 12px 16px;
-  gap: 1px;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 16px;
+    gap: 1px;
 
-  position: absolute;
-  width: 300px;
-  height: 34px;
-  left: 2px;
-  top: 30px;
+    position: absolute;
+    width: 300px;
+    height: 34px;
+    left: 2px;
+    top: 30px;
 
-  background: #EAEAEC;
-  border-radius: 6px;
+    background: #EAEAEC;
+    border-radius: 6px;
   }
 
-  .tennguoidung5{
+  .tennguoidung5 {
     position: relative;
     width: 350px;
-  height: 100px;
-  left: 680px;
-  top: -61px;
+    height: 100px;
+    left: 680px;
+    top: -61px;
 
   }
 
-  .tennguoidung5 p{
+  .tennguoidung5 p {
     width: 113px;
-  height: 20px;
-  flex-direction: row;
+    height: 20px;
+    flex-direction: row;
 
-  font-weight: 600;
-  font-size: 16px;
-  color: #282739;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
+    font-weight: 600;
+    font-size: 16px;
+    color: #282739;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
   }
 
-  .tennguoidung5 form{
+  .tennguoidung5 form {
     display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 12px 16px;
-  gap: 1px;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 16px;
+    gap: 1px;
 
-  position: absolute;
-  width: 300px;
-  height: 34px;
-  left: 2px;
-  top: 30px;
+    position: absolute;
+    width: 300px;
+    height: 34px;
+    left: 2px;
+    top: 30px;
 
-  background: #EAEAEC;
-  border-radius: 6px;
+    background: #EAEAEC;
+    border-radius: 6px;
   }
 
-  .detail img{
+  .detail img {
     position: absolute;
     height: 150px;
     width: 200px;
     top: 20px;
-    
+
   }
 
-  .hovaten{
+  .hovaten {
     position: absolute;
     top: 200px;
     right: 620px;
     font-weight: 600;
   }
 
-  .danhsachthietbi{
+  .danhsachthietbi {
     display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 0px;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
 
-  position: absolute;
-  width: 1112px;
-  height: 490px;
-  left: 224px;
-  top: 244px;
+    position: absolute;
+    width: 1112px;
+    height: 490px;
+    left: 224px;
+    top: 244px;
 
-  filter: drop-shadow(2px 2px 8px rgba(232, 239, 244, 0.8));
-  border-radius: 12px;
+    filter: drop-shadow(2px 2px 8px rgba(232, 239, 244, 0.8));
+    border-radius: 12px;
   }
 
-  .mathietbi{
+  .mathietbi {
     display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 0px 8px 0px 16px;
-  gap: 10px;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 8px 0px 16px;
+    gap: 10px;
 
-  width: 103px;
-  height: 49px;
+    width: 103px;
+    height: 49px;
 
-  background: #FF9138;
+    background: #FF9138;
 
-  flex: none;
-  order: 0;
-  align-self: stretch;
-  flex-grow: 0;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
 
 
   }
 
-  .tenthietbi{
-    display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 0px 8px;
-  gap: 10px;
-
-  width: 99px;
-  height: 49px;
-
-  background: #FF9138;
-
-  flex: none;
-  order: 0;
-  align-self: stretch;
-  flex-grow: 0;
-  }
-
-  .dichiip{
-    display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 0px 8px;
-  gap: 10px;
-
-  width: 138px;
-  height: 49px;
-
-  background: #FF9138;
-
-  flex: none;
-  order: 0;
-  align-self: stretch;
-  flex-grow: 0;
-  }
-
-  .trangthai{
+  .tenthietbi {
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 0px 8px;
     gap: 10px;
-    
-    width: 171px;
-    height: 49px;
-      
-    background: #FF9138;
-    
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 0;
-  }
 
-  .ketnoi{
-
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 0px 8px;
-  gap: 10px;
-
-  width: 145px;
-  height: 49px;
-
-  background: #FF9138;
-
-  flex: none;
-  order: 0;
-  align-self: stretch;
-  flex-grow: 0;
-  }
-
-  .dichvu{
-    display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 0px 17px;
-  gap: 10px;
-
-  width: 268px;
-  height: 49px;
-
-  background: #FF9138;
-
-  flex: none;
-  order: 0;
-  align-self: stretch;
-  flex-grow: 0;
-  }
-
-  .chitiet{
-    display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 0px 17px;
-  gap: 10px;
-
-  width: 82px;
-  height: 49px;
-
-  background: #FF9138;
-
-  flex: none;
-  order: 0;
-  align-self: stretch;
-  flex-grow: 0;
-  }
-
-  .capnhat{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 0px 17px;
-    gap: 10px;
-    
-    width: 106px;
-    height: 49px;
-      
-    background: #FF9138;
-      
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 0;
-  }
-
-  .thanhchan{
-    width: 1px;
-  height: 490px;
-
-  background: #FFE3CD;
-
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-  }
-
-  .danhsachthietbi h5{
-
-  font-family: 'Nunito';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 24px;
-
-  color: #FFFFFF;
-
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  }
-
-
-  .tendangnhapql{
-    display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 0px 17px;
-  gap: 10px;
-
-  width: 150px;
-  height: 49px;
-
-  /* Orange/$-Orange-400 */
-
-  background: #FF9138;
-
-  /* Inside auto layout */
-
-  flex: none;
-  order: 0;
-  align-self: stretch;
-  flex-grow: 0;
-  }
-
-  .hoten{
-    display: flex;
-flex-direction: row;
-align-items: center;
-padding: 0px 17px;
-gap: 10px;
-
-width: 166px;
-height: 49px;
-
-/* Orange/$-Orange-400 */
-
-background: #FF9138;
-
-/* Inside auto layout */
-
-flex: none;
-order: 0;
-align-self: stretch;
-flex-grow: 0;
-  }
-
-  .dienthoai{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 0px 17px;
-    gap: 10px;
-    
-    width: 130px;
-    height: 49px;
-    
-    /* Orange/$-Orange-400 */
-    
-    background: #FF9138;
-    
-    /* Inside auto layout */
-    
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 0;
-  }
-
-  .trangthaiql{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 0px 17px;
-    gap: 10px;
-    
-    width: 193px;
-    height: 49px;
-    
-    /* Orange/$-Orange-400 */
-    
-    background: #FF9138;
-    
-    /* Inside auto layout */
-    
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 0;
-  }
-
-  .capnhatql{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 0px 17px;
-    gap: 10px;
-    
     width: 99px;
     height: 49px;
-    
-    /* Orange/$-Orange-400 */
-    
+
     background: #FF9138;
-    
-    /* Inside auto layout */
-    
+
     flex: none;
     order: 0;
     align-self: stretch;
     flex-grow: 0;
   }
 
-  .email{
+  .dichiip {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 8px;
+    gap: 10px;
+
+    width: 138px;
+    height: 49px;
+
+    background: #FF9138;
+
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+  }
+
+  .trangthai {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 8px;
+    gap: 10px;
+
+    width: 171px;
+    height: 49px;
+
+    background: #FF9138;
+
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+  }
+
+  .ketnoi {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 8px;
+    gap: 10px;
+
+    width: 145px;
+    height: 49px;
+
+    background: #FF9138;
+
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+  }
+
+  .dichvu {
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 0px 17px;
     gap: 10px;
-    
-    width: 255px;
+
+    width: 268px;
     height: 49px;
-    
-    /* Orange/$-Orange-400 */
-    
+
     background: #FF9138;
-    
-    /* Inside auto layout */
-    
+
     flex: none;
     order: 0;
     align-self: stretch;
     flex-grow: 0;
   }
 
-  .vaitro{
+  .chitiet {
     display: flex;
-flex-direction: row;
-align-items: center;
-padding: 0px 17px;
-gap: 10px;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 17px;
+    gap: 10px;
 
-width: 114px;
-height: 49px;
+    width: 82px;
+    height: 49px;
 
-/* Orange/$-Orange-400 */
+    background: #FF9138;
 
-background: #FF9138;
-
-/* Inside auto layout */
-
-flex: none;
-order: 0;
-align-self: stretch;
-flex-grow: 0;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
   }
 
-  .danhsachtaikhoan{
+  .capnhat {
     display: flex;
-flex-direction: row;
-align-items: flex-start;
-padding: 0px;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 17px;
+    gap: 10px;
 
-position: absolute;
-width: 1112px;
-height: 490px;
-left: 224px;
-top: 244px;
+    width: 106px;
+    height: 49px;
 
-/* Shadowbox */
+    background: #FF9138;
 
-filter: drop-shadow(2px 2px 8px rgba(232, 239, 244, 0.8));
-border-radius: 12px;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
   }
 
-  .danhsachtaikhoan h5{
+  .thanhchan {
+    width: 1px;
+    height: 490px;
+
+    background: #FFE3CD;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+
+  .danhsachthietbi h5 {
 
     font-family: 'Nunito';
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 24px;
-  
+
     color: #FFFFFF;
-  
+
     flex: none;
     order: 0;
     flex-grow: 0;
-    }
+  }
+
+
+  .tendangnhapql {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 17px;
+    gap: 10px;
+
+    width: 150px;
+    height: 49px;
+
+
+    background: #FF9138;
+
+
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+  }
+
+  .hoten {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 17px;
+    gap: 10px;
+
+    width: 166px;
+    height: 49px;
+
+
+    background: #FF9138;
+
+
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+  }
+
+  .dienthoai {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 17px;
+    gap: 10px;
+
+    width: 130px;
+    height: 49px;
+
+
+    background: #FF9138;
+
+
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+  }
+
+  .trangthaiql {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 17px;
+    gap: 10px;
+
+    width: 193px;
+    height: 49px;
+
+
+    background: #FF9138;
+
+
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+  }
+
+  .capnhatql {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 17px;
+    gap: 10px;
+
+    width: 99px;
+    height: 49px;
+
+
+    background: #FF9138;
+
+
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+  }
+
+  .email {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 17px;
+    gap: 10px;
+
+    width: 255px;
+    height: 49px;
+
+
+    background: #FF9138;
+
+
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+  }
+
+  .vaitro {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 17px;
+    gap: 10px;
+
+    width: 114px;
+    height: 49px;
+
+
+    background: #FF9138;
+
+
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+  }
+
+  .danhsachtaikhoan {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: absolute;
+    width: 1112px;
+    height: 490px;
+    left: 224px;
+    top: 244px;
+
+
+    filter: drop-shadow(2px 2px 8px rgba(232, 239, 244, 0.8));
+    border-radius: 12px;
+  }
+
+  .danhsachtaikhoan h5 {
+
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: #FFFFFF;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
+  .danhsachtaikhoan p {
+
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: #FFFFFF;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
+  .themtaikhoan {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 4px;
+    gap: 4px;
+
+    position: absolute;
+    width: 80px;
+    height: 94px;
+    left: 1360px;
+    top: 244px;
+
+    background: #FFF2E7;
+    box-shadow: 0px 0px 6px #E7E9F2;
+    border-radius: 8px 0px 0px 8px;
+  }
+
+  .themtaikhoan img {
+    width: 28px;
+    height: 28px;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+  }
+
+  .themtaikhoan p {
+    width: 72px;
+    height: 38px;
+
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+
+    color: #FF7506;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+
+  .Themnguoidung {
+    position: absolute;
+    width: 1192px;
+    height: 534px;
+    left: 224px;
+    top: 150px;
+
+
+    background: #FFFFFF;
+
+    box-shadow: 2px 2px 8px rgba(232, 239, 244, 0.8);
+    border-radius: 16px;
+  }
+
+  .Themnguoidung h5 {
+    position: absolute;
+    width: 181px;
+    height: 30px;
+    left: 24px;
+    top: 16px;
+
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+
+    color: #FF7506;
+  }
+
+  .hotennd {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: -5px;
+
+    position: absolute;
+    width: 560px;
+    height: 76px;
+    left: 24px;
+    top: 66px;
+
+  }
+
+  .tendangnhapnd {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: -5px;
+
+    position: absolute;
+    width: 560px;
+    height: 76px;
+    left: 608px;
+    top: 66px;
+  }
+
+  .sodienthoaind {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: -5px;
+
+    position: absolute;
+    width: 560px;
+    height: 76px;
+    left: 24px;
+    top: 158px;
+  }
+
+  .matkhaund {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: -5px;
+
+    position: absolute;
+    width: 560px;
+    height: 76px;
+    left: 608px;
+    top: 158px;
+  }
+
+  .nhapmatkhaund {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: -5px;
+
+    position: absolute;
+    width: 560px;
+    height: 76px;
+    left: 608px;
+    top: 250px;
+  }
+
+  .emailnd {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: -5px;
+
+    position: absolute;
+    width: 560px;
+    height: 76px;
+    left: 24px;
+    top: 250px;
+  }
+
+  .vaitrond {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: -5px;
+
+    position: absolute;
+    width: 560px;
+    height: 76px;
+    left: 24px;
+    top: 342px;
+  }
+
+  .tinhtrangnd {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: -5px;
+
+    position: absolute;
+    width: 560px;
+    height: 76px;
+    left: 608px;
+    top: 342px;
+  }
+
+  .nutchon {
+    position: absolute;
+    width: 326px;
+    height: 40px;
+    left: 657px;
+    top: 700px;
+  }
+
+  .huybo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 24px;
+    gap: 8px;
+
+    position: absolute;
+    width: 147px;
+    height: 30px;
+    left: 0px;
+    top: 0px;
+
+    background: #FFF2E7;
+
+    border: 1.5px solid #FF9138;
+
+    box-shadow: 0px 0px 6px #E7E9F2;
+    border-radius: 8px;
+  }
+
+  .huybo p {
+    width: 54px;
+    height: 22px;
+
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 36px;
+
+    color: #FF9138;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
+  .them {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 24px;
+    gap: 8px;
+
+    position: absolute;
+    width: 147px;
+    height: 30px;
+    left: 179px;
+    top: 0px;
+
+    background: #FF9138;
+    box-shadow: 0px 0px 6px #E7E9F2;
+    border-radius: 8px;
+  }
+
+  .them p {
+    width: 43px;
+    height: 22px;
+
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 36px;
+
+    color: #FFFFFF;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }

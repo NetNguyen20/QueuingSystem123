@@ -3,14 +3,14 @@ import { useAuthState } from "react-firebase-hooks/auth";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { auth, db } from "../firebase";
-import {  updatePassword, sendPasswordResetEmail } from "firebase/auth";
+import { updatePassword, sendPasswordResetEmail } from "firebase/auth";
 
 function Reset() {
   const [email, setEmail] = useState("");
   const [user, loading, error] = useAuthState(auth);
   const navigate = useNavigate();
 
-  const sendPasswordReset = async (email:string) => {
+  const sendPasswordReset = async (email: string) => {
     try {
       await sendPasswordResetEmail(auth, email);
       alert("Password reset link sent!");
