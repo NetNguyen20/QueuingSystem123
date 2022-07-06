@@ -7,24 +7,49 @@
     import Caidat from "../image/Caidat.png"
     import Dangxuat from "../image/Dangxuat.png"
     import List from "../image/List.png"
-    import { auth } from "../firebase";
-    import React, { useContext, useRef } from "react";
-    import { AuthContext } from "../context/AuthContext";
+    import { auth, db } from "../firebase";
+    import { useAuthState } from "react-firebase-hooks/auth";
+    import { useNavigate } from "react-router-dom";
+    import { query, collection, getDocs, where } from "firebase/firestore";
 
-    import {NavLink} from "react-router-dom"
+
+    import {NavLink, useResolvedPath} from "react-router-dom"
+    import { useEffect, useState } from "react"
+import { signOut } from "firebase/auth"
 
 
     const Nvabar = () => {
-        const user = useContext(AuthContext);
+       
+        const [user, loading, error] = useAuthState(auth);
+        const [name, setName] = useState("");
+        const [phone, setPhone] = useState<number>(0);
 
-        const signOut = async () => {
-            await auth.signOut();
+        const navigate = useNavigate();
+        const fetchUserName = async () => {
+          try {
+            const q = query(collection(db, "users"), where("uid", "==", user?.uid));
+            const doc = await getDocs(q);
+            const data = doc.docs[0].data();
+            setName(data.name);
+            setPhone(data.phone);
+          } catch (err) {
+            console.error(err);
+            alert("An error occured while fetching user data");
+          }
         };
-
+        useEffect(() => {
+          if (loading) return;
+          if (!user) return navigate("/");
+          fetchUserName();
+        }, [user, loading]);
+        
+        const logout = () => {
+            signOut(auth);
+          }; 
         return (<div>
             <div className="information">
                 <div className="ten">
-                    <p>Xin chào <br />{user?.email}</p>
+                    <p>Xin chào<br />{name}</p>
                 </div> 
                 <div className="tieude">
                     <p>Thông tin cá nhân</p> 
@@ -65,28 +90,36 @@
                             Báo cáo
                         </NavLink>
                     </li>
-                    <li className="nav-item">
-                        <NavLink className="list-link Cai-dat" to="/caidat">
-                            <img className="i-element" src={Caidat}/>
+       
+                    <ul className="menu">
+                        <li>
+                            <a className="list-link Cai-dat">
+                                <img className="i-element" src={Caidat}/>
+                                Cài đặt hệ thống
+                                <img className="i-list" src={List}/>
+                                
+                            </a>
+                            <ul>
+                                <li><a href="/Page-quanly">Quản lý tài khoản</a></li>
+                                <li><a href="#">Quản lý vai trò</a></li>
+                                <li><a href="#">Nhật ký người dùng</a></li>
+                            </ul>
+                        </li>
+                    </ul>
 
-                            Cài đặt hệ thống
-                            <img className="i-list" src={List}/>
-
-                        </NavLink>
-                    </li>
                     <li className="nav-item">
-                        {user && 
-                            <NavLink onClick={signOut} className="list-link Dang-xuat" to="/Page-login">
+                        
+                            <NavLink  className="list-link Dang-xuat" onClick={logout} to="">
                                 <img className="i-element" src={Dangxuat}/>
                                 Đăng xuất
                             </NavLink>
-                        }
-                        
                     </li>
                 </ul>
+
+                
                 
             </div>
-                
+      
         </div>);
     } 
 
