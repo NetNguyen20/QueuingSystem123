@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
-import { Link, useNavigate } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { auth, db } from "../firebase";
 import { addDoc, collection, serverTimestamp, Timestamp } from "firebase/firestore"
 import { createUserWithEmailAndPassword } from "firebase/auth";
@@ -78,15 +78,15 @@ const Themnguoidung = () => {
             </div>
             <div className="matkhaund">
                 <p>Mật khẩu</p>
-                <input onChange={(e) => setPassword(e.target.value)} value={password} type="text" className="form-control" placeholder="Nhập mật khẩu"></input>
+                <input onChange={(e) => setPassword(e.target.value)} value={password} type="password" className="form-control" placeholder="Nhập mật khẩu"></input>
             </div>
             <div className="nhapmatkhaund">
                 <p>Nhập lại mật khẩu</p>
-                <input onChange={(e) => setPassword(e.target.value)} value={password} type="text" className="form-control" placeholder="Nhập lại mật khẩu"></input>
+                <input onChange={(e) => setPassword(e.target.value)} value={password} type="password" className="form-control" placeholder="Nhập lại mật khẩu"></input>
             </div>
             <div className="emailnd">
                 <p>Email</p>
-                <input onChange={(e) => setEmail(e.target.value)} value={email} type="text" className="form-control" placeholder="Nhập email"></input>
+                <input onChange={(e) => setEmail(e.target.value)} value={email} type="email" className="form-control" placeholder="Nhập email"></input>
             </div>
 
             <div className="vaitrond">
@@ -125,7 +125,9 @@ const Themnguoidung = () => {
 
         </div>
         <div className="nutchon">
+            
             <button className="huybo">
+                <NavLink to="/Page-nguoidung"></NavLink>
                 <p>Hủy bỏ</p>
             </button>
             <button onClick={themtaikhoan} className="them">

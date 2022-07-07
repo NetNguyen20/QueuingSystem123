@@ -878,52 +878,43 @@
     flex-grow: 0;
   }
 
-  .danhsachtaikhoan {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 0px;
-
+  .styled-table{
+    border-collapse:collapse;
+    font-size: 0.9em;
+    font-family: sans-serif;
     position: absolute;
-    width: 1112px;
-    height: 490px;
-    left: 224px;
-    top: 244px;
+width: 1112px;
+height: 490px;
+left: 224px;
+top: 244px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.15);
+}
+
+.styled-table thead tr {
+    background-color: #FF9138;
+    color:#fff;
+    text-align: left;
+}
+
+.styled-table th,
+.styled-table td{
+    padding: 12px 15px;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #FFE3CD;
+}
+
+.styled-table tbody tr:nth-of-type(even)
+{
+    background-color: white;
+}
+
+.styled-table tbody tr:last-of-type{
+    border-bottom: 2px solid #fff;
+}
 
 
-    filter: drop-shadow(2px 2px 8px rgba(232, 239, 244, 0.8));
-    border-radius: 12px;
-  }
-
-  .danhsachtaikhoan h5 {
-
-    font-family: 'Nunito';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 24px;
-
-    color: #FFFFFF;
-
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-  }
-
-  .danhsachtaikhoan p {
-
-    font-family: 'Nunito';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 24px;
-
-    color: #FFFFFF;
-
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-  }
 
   .themtaikhoan {
     display: flex;
@@ -1266,3 +1257,5 @@
     order: 0;
     flex-grow: 0;
   }
+
+ 

@@ -27,10 +27,11 @@ import {NavLink, useNavigate} from "react-router-dom"
     }, [user, loading]);
 
     const loginUser = async (email:string, password:string) => {
+      setError(false);
       try {
         await signInWithEmailAndPassword(auth, email, password);
       } catch (err) {
-        console.error(true);
+        setError(true);
       }
     };
 
