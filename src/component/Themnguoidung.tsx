@@ -5,9 +5,10 @@ import { auth, db } from "../firebase";
 import { addDoc, collection, serverTimestamp, Timestamp } from "firebase/firestore"
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import Nvabar from "../component/nvabar";
-import { DropDownListComponent } from '@syncfusion/ej2-react-dropdowns';
-import { Dropdown } from "react-bootstrap";
-import { timeStamp } from "console";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import 'react-css-dropdown/dist/index.css'
+import caret from "../image/caret.png"
+
 
 const Themnguoidung = () => {
     const [username, setUsername] = useState("");
@@ -17,7 +18,11 @@ const Themnguoidung = () => {
     const [vaitro, setVaitro] = useState("");
     const [tinhtrang, setTinhtrang] = useState("");
     const [phone, setPhone] = useState<number | string>(0);
-    const [user, loading, error] = useAuthState(auth);
+    const [user, loading, error] = useAuthState(auth);        
+    const [isActive, setIsActive] = useState(false);
+    const [isActive1, setIsActive1] = useState(false);
+    const options1 = ["Kế toán", "Quản lý", "Admin"];
+    const options2 = ["Tất cả", "Ngừng hoạt động", "Hoạt động"];
 
     const navigate = useNavigate();
     const createUser = async (username: string, name: string, email: string, password: string, phone: number | string, vaitro:string, tinhtrang:string) => {
@@ -58,45 +63,6 @@ const Themnguoidung = () => {
             </div>
         </div>
         <div className="Themnguoidung">
-            {/* <input
-            type="text"
-            className="register__textBox"
-            value={username}
-            onChange={(e) => setUsername(e.target.value)}
-            placeholder="User Name"
-            />
-            <input
-            type="text"
-            className="register__textBox"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-            placeholder="Full Name"
-            />
-            <input
-            type="number"
-            className="register__textBox"
-            value={phone}
-            onChange={(e) => setPhone(e.target.value)}
-            placeholder="Full Name"
-            />
-            <input
-            type="email"
-            className="register__textBox"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            placeholder="E-mail Address"
-            />
-            <input
-            type="password"
-            className="register__textBox"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            placeholder="Password"
-            />
-            <button className="register__btn" onClick={register}>
-            Register
-            </button> */}
-
             <h5>Thông tin tài khoản</h5>
             <div className="hotennd">
                 <p>Họ tên</p>
@@ -122,13 +88,39 @@ const Themnguoidung = () => {
                 <p>Email</p>
                 <input onChange={(e) => setEmail(e.target.value)} value={email} type="text" className="form-control" placeholder="Nhập email"></input>
             </div>
+
             <div className="vaitrond">
                 <p>Vai trò</p>
-                <input onChange={(e) => setVaitro(e.target.value)} value={vaitro} type="text" className="form-control" placeholder="Nhập vai trò"></input>
+                <div className="dropdown-btn" onClick={(e) => setIsActive(!isActive)}>
+                    {vaitro}
+                    <img src={caret} />
+                </div>
+                {isActive && (
+                    <div className="dropdown-content">
+                        {options1.map((option) =>(
+                            <div onClick={(e) => {setVaitro(option); setIsActive(false);}} className="dropdown-item">{option}</div>
+                            )
+                        )}
+                    </div>
+                )}
+                {/* <input onChange={(e) => setVaitro(e.target.value)} value={vaitro} type="text" className="form-control" placeholder="Nhập vai trò"></input> */}
             </div>
             <div className="tinhtrangnd">
                 <p>Tình trạng</p>
-                <input onChange={(e) => setTinhtrang(e.target.value)} value={tinhtrang} type="text" className="form-control" placeholder="Nhập tình trạng"></input>
+                <div className="dropdown-btn" onClick={(e) => setIsActive1(!isActive1)}>
+                    {tinhtrang}
+                    <img src={caret} />
+
+                </div>
+                {isActive1 && (
+                    <div className="dropdown-content">
+                        {options2.map((option1) =>(
+                            <div onClick={(e) => {setTinhtrang(option1); setIsActive1(false);}} className="dropdown-item">{option1}</div>
+                            )
+                        )}
+                    </div>
+                )}
+                {/* <input onChange={(e) => setTinhtrang(e.target.value)} value={tinhtrang} type="text" className="form-control" placeholder="Nhập tình trạng"></input> */}
             </div>
 
         </div>

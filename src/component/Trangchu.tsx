@@ -14,6 +14,7 @@ const TrangChu = () => {
     const [name, setName] = useState("");
     const [phone, setPhone] = useState<number>(0);
     const [password, setPassword] = useState("");
+    const [vaitro, setVaitro] = useState("");
 
     const navigate = useNavigate();
     const fetchUserName = async () => {
@@ -26,6 +27,7 @@ const TrangChu = () => {
             setPassword(data.password);
             setUserName(data.username);
             setEmail(data.email);
+            setVaitro(data.vaitro);
 
         } catch (err) {
             console.error(err);
@@ -74,7 +76,7 @@ const TrangChu = () => {
                 </li>
                 <li className="tennguoidung5">
                     <p>Vai trò</p>
-                    <form action="">Tên</form>
+                    <form action="">{vaitro}</form>
                 </li>
             </ul>
         </div>
